@@ -1,0 +1,15 @@
+.header {
+  font-size: 30px;
+  padding: 10px 30px;
+  letter-spacing: 0;
+}
+
+.reference {
+  text-decoration: none;
+  color: rgb(80, 180, 180);
+  font-weight: bold;
+}
+
+.reference:hover {
+  color: rgb(130, 210, 210);
+}

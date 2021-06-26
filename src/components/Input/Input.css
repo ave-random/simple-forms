@@ -1,0 +1,38 @@
+.error {
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(230, 80, 80);
+  padding-top: 8px;
+}
+
+.textInputWrapper {
+  margin-bottom: 16px;
+}
+
+.textInput {
+  height: 25px;
+  width: 30vw;
+  margin-top: 10px;
+  border-style: none;
+  border-radius: 5px;
+}
+
+.textInput:focus,
+.textInput:hover {
+  outline: 0;
+  box-shadow: 5px 5px 15px rgb(210, 215, 220), -5px -5px 15px white;
+}
+
+.textInputError,
+.textInputError:focus,
+.textInputError:hover {
+  border-style: solid;
+  border-color: rgb(230, 180, 180);
+}
+
+.label {
+  font-weight: bold;
+  font-size: 18px;
+  word-wrap: inherit;
+  width: 30vw;
+}
