@@ -8,6 +8,7 @@
   text-decoration: none;
   color: rgb(80, 180, 180);
   font-weight: bold;
+  transition: 0.2s;
 }
 
 .reference:hover {

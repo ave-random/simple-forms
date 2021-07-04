@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 
 .App {
+  min-height: 100vh;
+  background-color: rgb(240, 240, 240);
   font-family: 'Poiret One', cursive;
   color: rgb(60, 60, 60);
-  background-color: rgb(240, 240, 240);
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  letter-spacing: 0.6px;
+  letter-spacing: 0.8px;
 }

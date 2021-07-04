@@ -16,6 +16,7 @@
   border-style: none;
   box-shadow: 5px 5px 10px rgb(210, 215, 220), -5px -5px 15px white;
   margin: 30px;
+  transition: 0.2s;
 }
 
 #startTestButton:hover,

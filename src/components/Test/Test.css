@@ -8,9 +8,12 @@
   word-wrap: break-word;
 }
 
+li.question::marker {
+  font-size: 24px;
+}
+
 .question {
   width: 40vw;
-  padding: 6px;
   word-wrap: inherit;
 }
 
@@ -40,6 +43,7 @@
   border-style: none;
   box-shadow: 5px 5px 10px rgb(190, 200, 210), -5px -5px 15px white;
   margin-bottom: 35px;
+  transition: 0.2s;
 }
 
 #submitResultButton:hover {

@@ -1,13 +1,11 @@
 import './Test.css';
 import Checkbox from '../Checkbox/Checkbox';
 import { useForm } from 'react-hook-form';
-
-// answersList, questionList
-// _.isEqualDeep(answersList, _.map(questionList, 'correctOptionList'));
+import { useHistory } from 'react-router-dom';
 
 function Test({ questionList, MESSAGES }) {
+  const history = useHistory();
   const { register, handleSubmit } = useForm();
-
   const onSubmit = (data) => submitResults(data.answers);
 
   function submitResults(arr) {
@@ -26,6 +24,7 @@ function Test({ questionList, MESSAGES }) {
     } else {
       alert(MESSAGES.SYS7(incorrectAnswers, questionsCount));
     }
+    history.push('/');
   }
 
   function getAnswersList(arr) {
