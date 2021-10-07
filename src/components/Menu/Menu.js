@@ -10,7 +10,7 @@ function Menu() {
         id="addAQuestionButton"
         onClick={() => history.push('/question')}
       >
-        Добавить вопрос
+        add question
       </button>
 
       <button
@@ -18,7 +18,7 @@ function Menu() {
         id="startTestButton"
         onClick={() => history.push('/test')}
       >
-        Начать тест
+        start test
       </button>
     </div>
   );

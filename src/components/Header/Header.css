@@ -1,16 +1,16 @@
 .header {
-  font-size: 30px;
-  padding: 10px 30px;
+  font-size: 26px;
+  padding: 10px 20px;
   letter-spacing: 0;
 }
 
 .reference {
   text-decoration: none;
-  color: rgb(80, 180, 180);
+  color: rgb(220, 172, 255);
   font-weight: bold;
-  transition: 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 .reference:hover {
-  color: rgb(130, 210, 210);
+  color: rgb(205, 140, 250);
 }

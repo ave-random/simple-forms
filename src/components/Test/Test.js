@@ -81,7 +81,7 @@ function Test({ questionList, MESSAGES }) {
       </ol>
 
       <button type="submit" id="submitResultButton">
-        Отправить
+        Submit
       </button>
     </form>
   );

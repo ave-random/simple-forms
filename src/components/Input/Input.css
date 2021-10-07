@@ -1,24 +1,25 @@
 .label {
-  font-weight: bold;
   font-size: 18px;
   word-wrap: inherit;
-  width: 30vw;
+  width: 450px;
 }
 
 .error {
-  font-weight: bold;
   font-size: 16px;
   color: rgb(230, 80, 80);
   padding-top: 4px;
 }
 
 .textInputWrapper {
-  margin-bottom: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0;
+  padding-bottom: 20px;
 }
 
 .textInput {
-  height: 24px;
-  width: 30vw;
+  box-sizing: border-box;
+  height: 26px;
+  width: 450px;
   margin-top: 8px;
   border-style: none;
   border-radius: 5px;
@@ -28,12 +29,11 @@
 .textInput:focus,
 .textInput:hover {
   outline: 0;
-  box-shadow: 4px 4px 10px rgb(210, 215, 220), -4px -4px 10px white;
+  border-bottom: 1px solid rgb(220, 172, 255);
 }
 
 .textInputError,
 .textInputError:focus,
 .textInputError:hover {
-  border-style: solid;
-  border-color: rgb(230, 180, 180);
+  border-bottom: 1px solid rgb(230, 180, 180);
 }

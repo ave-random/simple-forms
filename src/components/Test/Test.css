@@ -1,6 +1,7 @@
 .test {
   color: rgb(60, 60, 60);
-  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 0;
   font-size: 18px;
   display: flex;
   flex-direction: column;
@@ -9,11 +10,12 @@
 }
 
 li.question::marker {
-  font-size: 24px;
+  font-size: 26px;
+  color: rgb(205, 140, 250);
 }
 
 .question {
-  width: 40vw;
+  width: 600px;
   word-wrap: inherit;
 }
 
@@ -37,23 +39,23 @@ li.question::marker {
   font-size: 18px;
   font-weight: bold;
   color: rgb(60, 60, 60);
-  height: 50px;
-  width: 150px;
+  height: 45px;
+  width: 135px;
   border-radius: 5px;
   border-style: none;
   box-shadow: 5px 5px 10px rgb(190, 200, 210), -5px -5px 15px white;
   margin-bottom: 35px;
-  transition: 0.2s;
+  transition: ease-in-out 0.2s;
 }
 
 #submitResultButton:hover {
-  background-color: rgb(100, 200, 200);
+  background-color: rgb(220, 172, 255);
   color: white;
   cursor: pointer;
 }
 
 #submitResultButton:active {
-  background-color: rgb(80, 180, 180);
+  background-color: rgb(205, 140, 250);
   color: white;
   box-shadow: none;
 }

@@ -51,42 +51,42 @@ function Form({ setQuestionList, MESSAGES }) {
       <form className="questionCreator" onSubmit={handleSubmit(onSubmit)}>
         <Input
           name="questionText"
-          label="Введите текст вопроса:"
+          label="Question text:"
           required={MESSAGES.SYS1}
           register={register}
           error={errors.questionText}
         />
         <Input
           name="firstOption"
-          label="Введите текст 1 варианта ответа:"
+          label="First option:"
           required={MESSAGES.SYS2(1)}
           register={register}
           error={errors.firstOption}
         />
         <Input
           name="secondOption"
-          label="Введите текст 2 варианта ответа:"
+          label="Second option:"
           required={MESSAGES.SYS2(2)}
           register={register}
           error={errors.secondOption}
         />
         <Input
           name="thirdOption"
-          label="Введите текст 3 варианта ответа:"
+          label="Third option:"
           required={MESSAGES.SYS2(3)}
           register={register}
           error={errors.thirdOption}
         />
         <Input
           name="fourthOption"
-          label="Введите текст 4 варианта ответа:"
+          label="Fourth option:"
           required={MESSAGES.SYS2(4)}
           register={register}
           error={errors.fourthOption}
         />
         <Input
           name="correctOption"
-          label="Введите номера правильных ответов через запятую:"
+          label="Сorrect options (separated by comma):"
           required={MESSAGES.SYS3}
           register={register}
           error={errors.correctOption}
@@ -98,10 +98,10 @@ function Form({ setQuestionList, MESSAGES }) {
             id="cancelButton"
             onClick={() => history.push('/')}
           >
-            Отмена
+            Cancel
           </button>
           <button type="submit" className="questionCreatorButton" id="okButton">
-            Ок
+            Ok
           </button>
         </div>
       </form>
