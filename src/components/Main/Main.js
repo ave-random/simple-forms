@@ -72,7 +72,7 @@ function Main() {
   const [questionList, setQuestionList] = useState(defaultQuestionList);
 
   return (
-    <Router>
+    <Router basename="/simple-forms">
       <Route exact path="/" component={Menu} />
       <Route path="/question">
         <Form setQuestionList={setQuestionList} MESSAGES={MESSAGES} />
