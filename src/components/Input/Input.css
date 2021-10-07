@@ -14,12 +14,14 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   letter-spacing: 0;
   padding-bottom: 20px;
+  width: 450px;
+
 }
 
 .textInput {
   box-sizing: border-box;
   height: 26px;
-  width: 450px;
+  width: 100%;
   margin-top: 8px;
   border-style: none;
   border-radius: 5px;

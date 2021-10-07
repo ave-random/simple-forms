@@ -3,23 +3,25 @@ import { useHistory } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import './Form.css';
 
-function validateCorrectOptions(value, { MESSAGES }) {
-  function containsInvalidNumber(options) {
-    return options.some((el) => !Number.isInteger(el) || el < 1 || el > 4);
-  }
+function validateCorrectOptions({ MESSAGES }) {
+  return (value) => {
+    function containsInvalidNumber(options) {
+      return options.some((el) => !Number.isInteger(el) || el < 1 || el > 4);
+    }
 
-  function hasDuplicates(array) {
-    return array.length !== new Set(array).size;
-  }
+    function hasDuplicates(array) {
+      return array.length !== new Set(array).size;
+    }
 
-  let correctOptionList = value.split(',').map(Number).sort();
+    let correctOptionList = value.split(',').map(Number).sort();
 
-  let result =
-    containsInvalidNumber(correctOptionList) ||
-    hasDuplicates(correctOptionList);
+    let result =
+      containsInvalidNumber(correctOptionList) ||
+      hasDuplicates(correctOptionList);
 
-  console.log(result);
-  return !result || MESSAGES.SYS6;
+    console.log(result);
+    return !result || MESSAGES.SYS6;
+  };
 }
 
 function Form({ setQuestionList, MESSAGES }) {
@@ -90,7 +92,7 @@ function Form({ setQuestionList, MESSAGES }) {
           required={MESSAGES.SYS3}
           register={register}
           error={errors.correctOption}
-          validate={validateCorrectOptions}
+          validate={validateCorrectOptions({ MESSAGES })}
         />
         <div className="questionCreatorMenu">
           <button
